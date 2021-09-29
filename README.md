@@ -10,6 +10,7 @@ To run the code
 
 
 **More about the code**
+
 The code can be seperated in two sections, the user and the admin section. 
 
 USER needs to be able to
