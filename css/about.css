@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	background-color: #93c0cc;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px, auto;
+	grid-template-areas:
+		"n n n n n n n n n n n n"
+		". . . m m m m m m . . .";
+}
+/* navigation bar */
+.nav-bar {
+	background-color: aliceblue;
+
+	grid-area: n;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 10px 50px;
+	align-items: center;
+}
+
+.nav-left-side {
+	margin-left: 20px;
+	background-color: aliceblue;
+}
+.nav-left-side img {
+	width: 150px;
+	height: auto;
+	background-color: aliceblue;
+}
+
+.nav-left-side a {
+	text-decoration: none;
+	background-color: aliceblue;
+}
+
+.nav-right-side {
+	display: flex;
+	background-color: aliceblue;
+}
+
+.nav-bar > .nav-right-side > ul {
+	font-size: 0.9em;
+	background-color: aliceblue;
+}
+
+li {
+	display: inline-block;
+	height: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+	list-style-type: none;
+	background-color: aliceblue;
+}
+
+li a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	background-color: aliceblue;
+}
+
+li:hover {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:hover {
+	color: #1d3557;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid #1d3557;
+}
+
+.active-nav-link a {
+	color: #1d3557 !important;
+}
+
+/* main page styles */
+.main-page {
+	grid-area: m;
+	position: relative;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto, auto;
+	grid-template-areas:
+		"d d d"
+		"k a g";
+
+	justify-content: center;
+}
+
+.project_desctiption {
+	grid-area: d;
+	margin-top: 17%;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+	width: 100%;
+	border-bottom: 4px solid #1d3557;
+}
+
+.project_desctiption h1 {
+	text-align: center;
+	padding: 10px;
+	color: #1d3557;
+	font-size: 40px;
+}
+
+.project_desctiption p {
+	text-align: center;
+	padding: 10px;
+	color: black;
+	font-size: 22px;
+}
+
+.project_contributor_adam {
+	grid-area: a;
+	text-align: center;
+}
+
+.project_contributor_georgia {
+	grid-area: k;
+	text-align: center;
+}
+
+.project_contributor_george {
+	grid-area: g;
+	text-align: center;
+}
+
+h3 {
+	color: #e8e9e7;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+img {
+	height: 150px;
+	width: auto;
+}
+
+p {
+	text-align: left;
+	margin-left: 50px;
+}

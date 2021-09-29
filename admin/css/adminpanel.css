@@ -1,0 +1,153 @@
+/* master styles*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lato", sans-serif;
+}
+body {
+	background-color: #1d3557;
+}
+.container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px, auto;
+	grid-template-areas:
+		"n n n n n n n n n n n n"
+		". . . m m m m m m . . .";
+}
+
+/* navigation bar */
+.nav-bar {
+	grid-area: n;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 10px 50px;
+	align-items: center;
+	background-color: aliceblue;
+}
+
+.nav-left-side {
+	margin-left: 20px;
+	background-color: aliceblue;
+}
+.nav-left-side img {
+	width: 150px;
+	height: auto;
+	background-color: aliceblue;
+}
+.nav-left-side a {
+	text-decoration: none;
+	background-color: aliceblue;
+}
+.nav-right-side {
+	display: flex;
+}
+.nav-bar > .nav-right-side > ul {
+	font-size: 0.9em;
+	background-color: aliceblue;
+}
+
+li {
+	display: inline-block;
+	height: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+	list-style-type: none;
+	background-color: aliceblue;
+}
+
+li a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	background-color: aliceblue;
+}
+
+li:hover,
+li:active {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:hover,
+a:active {
+	color: #1d3557;
+}
+
+li:active {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:active {
+	color: #1d3557;
+}
+
+.main-page {
+	grid-area: m;
+	position: relative;
+	margin-top: 20%;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: "i t h d";
+
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.basic-info {
+	grid-area: i;
+	text-align: center;
+
+	margin-right: 50px;
+}
+
+.timings {
+	grid-area: t;
+	text-align: center;
+
+	margin-right: 50px;
+}
+
+.httpheaders {
+	grid-area: h;
+	text-align: center;
+	margin-right: 50px;
+}
+
+.datavisuals {
+	grid-area: d;
+	text-align: center;
+	margin-right: 50px;
+}
+
+h3 {
+	color: #e8e9e7;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+img {
+	height: 150px;
+	width: auto;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	height: 35px;
+	width: 140px;
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #152c4d;
+	background: #93c0cc;
+	cursor: pointer;
+
+	border: 3px solid aliceblue;
+}

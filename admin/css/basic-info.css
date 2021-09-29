@@ -1,0 +1,220 @@
+/* master styles*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lato", sans-serif;
+}
+body {
+	background-color: #1d3557;
+}
+.container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px, auto;
+	grid-template-areas:
+		"n n n n n n n n n n n n"
+		". m m m m m m m m m m .";
+}
+/* navigation bar */
+.nav-bar {
+	grid-area: n;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 10px 50px;
+	align-items: center;
+	background-color: aliceblue;
+}
+
+.nav-left-side {
+	margin-left: 20px;
+	background-color: aliceblue;
+}
+.nav-left-side img {
+	width: 150px;
+	height: auto;
+	background-color: aliceblue;
+}
+.nav-left-side a {
+	text-decoration: none;
+	background-color: aliceblue;
+}
+.nav-right-side {
+	display: flex;
+}
+.nav-bar > .nav-right-side > ul {
+	font-size: 0.9em;
+	background-color: aliceblue;
+}
+
+li {
+	display: inline-block;
+	height: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+	list-style-type: none;
+	background-color: aliceblue;
+}
+
+li a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	background-color: aliceblue;
+}
+
+li:hover,
+li:active {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:hover,
+a:active {
+	color: #1d3557;
+}
+
+/* li:active {
+	border-bottom: 1px solid #1d3557;
+}
+li a:active {
+	color: #1d3557;
+} */
+
+.main-page {
+	grid-area: m;
+	position: relative;
+	margin-top: 10%;
+}
+
+table {
+	border-spacing: 1;
+	border-collapse: collapse;
+	background: white;
+	overflow: hidden;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	border: 3px solid aliceblue;
+}
+table * {
+	position: relative;
+}
+
+table td,
+table th {
+	padding-left: 8px;
+}
+
+table thead tr {
+	height: 60px;
+	background: #93c0cca6;
+	font-size: 16px;
+}
+
+table tbody tr {
+	height: 48px;
+	background-color: rgba(240, 248, 255, 0.137);
+	border-bottom: 1px solid #1d3557;
+}
+
+table tbody tr:last-child {
+	border: 0;
+}
+
+table td,
+table th {
+	text-align: left;
+}
+
+table td.l,
+table th.l {
+	text-align: right;
+}
+
+table td.c,
+table th.c {
+	text-align: center;
+}
+
+table td.r,
+table th.r {
+	text-align: center;
+}
+
+@media screen and (max-width: 35.5em) {
+	table {
+		display: block;
+	}
+
+	table > *,
+	table tr,
+	table td,
+	table th {
+		display: block;
+	}
+
+	table thead {
+		display: none;
+	}
+
+	table tbody tr {
+		height: auto;
+		padding: 8px 0;
+	}
+
+	table tbody tr td {
+		padding-left: 45%;
+		margin-bottom: 12px;
+	}
+
+	table tbody tr td:last-child {
+		margin-bottom: 0;
+	}
+
+	table tbody tr td:before {
+		position: absolute;
+		font-weight: 700;
+		width: 40%;
+		left: 10px;
+		top: 0;
+	}
+	button {
+		display: block;
+		margin: 0 auto;
+		height: 35px;
+		width: 140px;
+
+		font-size: 16px;
+		font-weight: bold;
+		color: #152c4d;
+		background: #93c0cc;
+		cursor: pointer;
+
+		border: 3px solid aliceblue;
+	}
+	table tbody tr td:nth-child(1):before {
+		content: "Κατηγορία";
+	}
+
+	table tbody tr td:nth-child(2):before {
+		content: "Πλήθος";
+	}
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	height: 35px;
+	width: 140px;
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #152c4d;
+	background: #93c0cc;
+	cursor: pointer;
+
+	border: 3px solid aliceblue;
+}

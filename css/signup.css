@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	background-color: #93c0cc;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px, auto;
+	grid-template-areas:
+		"n n n n n n n n n n n n"
+		". . . m m m m m m . . .";
+}
+/* navigation bar */
+.nav-bar {
+	background-color: aliceblue;
+
+	grid-area: n;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 10px 50px;
+	align-items: center;
+}
+
+.nav-left-side {
+	margin-left: 20px;
+	background-color: aliceblue;
+}
+.nav-left-side img {
+	width: 150px;
+	height: auto;
+	background-color: aliceblue;
+}
+
+.nav-left-side a {
+	text-decoration: none;
+	background-color: aliceblue;
+}
+
+.nav-right-side {
+	display: flex;
+	background-color: aliceblue;
+}
+
+.nav-bar > .nav-right-side > ul {
+	font-size: 0.9em;
+	background-color: aliceblue;
+}
+
+li {
+	display: inline-block;
+	height: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+	list-style-type: none;
+	background-color: aliceblue;
+}
+
+li a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	background-color: aliceblue;
+}
+
+li:hover {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:hover {
+	color: #1d3557;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid #1d3557;
+}
+
+.active-nav-link a {
+	color: #1d3557 !important;
+}
+
+/*main page styles*/
+.main {
+	grid-area: m;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+
+	/* other colors of site rgb(29, 53, 87); rgb(147, 192, 204); rgb(208, 209, 207); rgb(230, 57, 70);*/
+}
+
+.form-box {
+	max-width: 480px;
+	position: relative;
+	margin: 10% auto;
+	background-color: rgb(29, 53, 87);
+	padding: 5px;
+
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(29, 66, 87, 0.2);
+}
+
+.form-box h2 {
+	margin-top: 30px;
+	color: aliceblue;
+	background: transparent;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 1px 1px #93c0cc;
+}
+
+.input-group {
+	padding: 50px 100px;
+	width: 280px;
+	transition: 0.5s;
+	background-color: rgb(29, 53, 87);
+	font-size: medium;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	outline: none;
+	background: transparent;
+	color: aliceblue;
+	font-size: medium;
+}
+
+.submit-btn {
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer; /* to show a shodow when you go over the button */
+	display: block; /*Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width */
+	margin: auto;
+	background-color: rgb(230, 57, 70);
+	color: aliceblue;
+	font-size: medium;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box {
+	margin: 30px 10px 30px 0;
+}
+
+span {
+	color: rgb(147, 192, 204);
+	font-size: 15px;
+	bottom: 68px;
+	position: auto;
+	background-color: rgb(29, 53, 87);
+}

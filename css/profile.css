@@ -1,0 +1,187 @@
+/* master styles*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lato", sans-serif;
+	background-color: #1d3557;
+}
+
+.container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px, auto;
+	grid-template-areas:
+		"n n n n n n n n n n n n"
+		". m m m m m m m m m m .";
+}
+/* navigation bar */
+.nav-bar {
+	grid-area: n;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 10px 50px;
+	align-items: center;
+	background-color: aliceblue;
+}
+
+.nav-left-side {
+	margin-left: 20px;
+	background-color: aliceblue;
+}
+.nav-left-side img {
+	width: 150px;
+	height: auto;
+	background-color: aliceblue;
+}
+.nav-left-side a {
+	text-decoration: none;
+	background-color: aliceblue;
+}
+.nav-right-side {
+	display: flex;
+}
+.nav-bar > .nav-right-side > ul {
+	font-size: 0.9em;
+	background-color: aliceblue;
+}
+
+li {
+	display: inline-block;
+	height: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+	list-style-type: none;
+	background-color: aliceblue;
+}
+
+li a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	background-color: aliceblue;
+}
+
+li:hover {
+	border-bottom: 1px solid #1d3557;
+}
+
+li a:hover {
+	color: #1d3557;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid #1d3557;
+}
+
+.active-nav-link a {
+	color: #1d3557 !important;
+}
+
+/*main page style */
+.user-profile {
+	grid-area: m;
+	position: relative;
+	margin-top: 10%;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "info box";
+}
+
+.info {
+	grid-area: info;
+	position: relative;
+	margin-top: 10%;
+	margin-left: auto;
+}
+
+.info h1 {
+	color: #e8e9e7;
+	font-size: 70px;
+	text-shadow: 3px -2px #93c0cc;
+}
+
+.info table {
+	padding-top: 10px;
+	padding-left: 10px;
+	color: aliceblue;
+	width: 650px;
+	font-size: 20px;
+	text-shadow: 2px 2px #1d3557;
+}
+
+.info button {
+	margin-top: 25px;
+
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #e8e9e7;
+	background: #e63946;
+	border: 3px solid white;
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+.form-box {
+	grid-area: box;
+	max-width: 480px;
+	position: relative;
+	margin: 10% auto;
+	background: rgba(240, 248, 255);
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.form-box h2 {
+	margin-top: 30px;
+	color: rgb(29, 53, 87);
+	background: rgba(240, 248, 255, 0.9);
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 1px 1px #93c0cc;
+}
+
+.input-group {
+	/* height: 200px; */
+	margin: 0 auto;
+	background: rgba(240, 248, 255, 0.9);
+	padding: 30px 50px 40px 50px;
+	position: relative;
+	width: 270px;
+	transition: 0.5s;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px 0;
+	border: 0;
+	border-bottom: 2px solid rgb(29, 53, 87);
+	outline: none;
+	background: transparent;
+	color: rgb(29, 53, 87);
+	font-size: medium;
+}
+
+.submit-btn {
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer; /* to show a shodow when you go over the button */
+	display: block; /*Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width */
+	margin: auto;
+	background-color: rgb(230, 57, 70);
+	color: rgba(240, 248, 255, 0.9);
+	border: 0;
+	outline: none;
+	border-radius: 25px;
+	font-size: medium;
+}
