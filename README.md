@@ -28,9 +28,6 @@ ADMIN needs to be able to
 3) Analyse the HTTP headers of all uploaded data
 4) Visualise data of entries (the admin can see in a map, where the user has sent requests and it connects them with the userlocation via a line)
 
-Disclaimer #1: From the tasks above, the heatmap is malfunctioning.
-
-Disclaimer #2: The project was part of a uni course and was done as a group project. My contribution to it was more than 90% which is why I feel comfortable sending it to you. Feel free to ask me any question!
 
 
 
